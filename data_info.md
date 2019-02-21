@@ -82,3 +82,21 @@ I had 4 differnt raw data of patients.
  |-- description: string (nullable = true)</br>
  |-- severity: string (nullable = true)</br>
  |-- Encounter_ID: string (nullable = true)</br>
+ 
+ ## Feature Selection
+ 
+**medical_dataframe**
+ |-- patientID: string (nullable = true) </br>
+ |-- date: string (nullable = true) </br>
+ |-- medicine: string (nullable = true) </br>
+ 
+**lab_dataframe**
+ |-- patientID: string (nullable = true) </br>
+ |-- date: string (nullable = true) </br>
+ |-- testName: string (nullable = true) </br>
+ |-- value: double (nullable = true) </br>
+ 
+**diag_dataframe**
+ |-- patientId: string (nullable = true) </br>
+ |-- date: string (nullable = true) </br>
+ |-- code: string (nullable = true) </br>
