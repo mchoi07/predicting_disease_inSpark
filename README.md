@@ -13,26 +13,25 @@ In order to provide a proper treatment to a patient we must understand a patient
 
 ## Raw Data 
 
-**medication_orders**
-root
+**medication_orders** </br>
  |-- Provider_Org: string (nullable = true) </br>
  |-- Member_ID: string (nullable = true) </br>
  |-- Last_Filled_Date: string (nullable = true) </br>
  |-- Drug_Name: string (nullable = true) </br>
- |-- Drug_NDC: string (nullable = true)
- |-- Status: string (nullable = true)
- |-- Sig: string (nullable = true)
- |-- Route: string (nullable = true)
- |-- Dose: string (nullable = true)
- |-- Units: string (nullable = true)
- |-- Order_ID: string (nullable = true)
- |-- Order_Date: string (nullable = true)
- |-- Qty_Ordered: string (nullable = true)
- |-- Refills: string (nullable = true)
- |-- Order_Provider_ID: string (nullable = true)
- |-- Order_Provider_Name: string (nullable = true)
- |-- Medication_Type: string (nullable = true)
- |-- Encounter_ID: string (nullable = true)
+ |-- Drug_NDC: string (nullable = true)</br>
+ |-- Status: string (nullable = true)</br>
+ |-- Sig: string (nullable = true)</br>
+ |-- Route: string (nullable = true)</br>
+ |-- Dose: string (nullable = true)</br>
+ |-- Units: string (nullable = true)</br>
+ |-- Order_ID: string (nullable = true)</br>
+ |-- Order_Date: string (nullable = true)</br>
+ |-- Qty_Ordered: string (nullable = true)</br>
+ |-- Refills: string (nullable = true)</br>
+ |-- Order_Provider_ID: string (nullable = true)</br>
+ |-- Order_Provider_Name: string (nullable = true)</br>
+ |-- Medication_Type: string (nullable = true)</br>
+ |-- Encounter_ID: string (nullable = true)</br>
 
 
 
