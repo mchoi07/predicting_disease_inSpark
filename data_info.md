@@ -1,6 +1,11 @@
-## Raw Data (From CSV)
+## Raw Data
+* Original data fromat is `csv` 
+> medication_orders 
+> lab_result
+> encounter
+> encounter_dx
 
-I had 4 differnt raw data of patients. 
+
 
 **medication_orders** </br>
  |-- Provider_Org: string (nullable = true) </br>
