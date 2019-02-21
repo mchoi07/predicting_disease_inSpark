@@ -29,7 +29,7 @@ Please read the data_info.md file
  |-- code: string (nullable = true) </br>
  
  2. Convert RDD to RDD </br>
- ```{scala}
+ ```{java}
 case class Diagnostic(patientID: String, date: Date, code: String)
 case class LabResult(patientID: String, date: Date, testName: String, value: Double)
 case class Medication(patientID: String, date: Date, medicine: String)
@@ -41,7 +41,7 @@ val diagnostic: RDD[Diagnostic] = sql_diag.as[Diagnostic].rdd
  ```
  
  3. Feature Construction 
- ```{scala}
+ ```{Scala}
  
    /**
     * The format of feature should be looked like ((patient-id, feature-name), feature-value)
