@@ -29,7 +29,7 @@ Please read the data_info.md file
  |-- code: string (nullable = true) </br>
  
  2. Convert RDD to RDD </br>
- ```{scara}
+ ```{scala}
 case class Diagnostic(patientID: String, date: Date, code: String)
 case class LabResult(patientID: String, date: Date, testName: String, value: Double)
 case class Medication(patientID: String, date: Date, medicine: String)
@@ -38,6 +38,32 @@ val medication: RDD[Medication] = sql_med.as[Medication].rdd
 val labResult: RDD[LabResult] = sql_lab_b.as[LabResult].rdd
 val diagnostic: RDD[Diagnostic] = sql_diag.as[Diagnostic].rdd
 
+ ```
+ 
+ 3. Feature Construction 
+ ```{scala}
+ 
+   /**
+    * The format of feature should be looked like ((patient-id, feature-name), feature-value)
+    * feature-value : Aggregate feature tuples from diagnostic with COUNT aggregation
+    */
+ 
+ // The format of features ((patient_id, diag_code), feature-value)
+ 
+ val diag_feature = diagnostic.map(x => ((x.patientID, x.code), 1.0))
+ 				.keyBy(k => k._1).reduceByKey((x,y) => (x._1, x._2 + y._2))
+ 				.map(f => f._2)
+				
+ // The format of features ((patient_id, medicine), feature-value)
+ 
+ val med_feature = medication.map(x => ((x.patientID, x.medicine), 1.0))
+ 				.keyBy(k => k._1).reduceByKey((x,y) => (x._1, x._2 + y._2))
+ 				.map(f => f._2)
+				
+ // The format of features ((patient_id, testName), feature-value)
+ 
+ val lab_feature = 
+ 
  ```
  
 
