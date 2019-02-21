@@ -1,9 +1,9 @@
 ## Raw Data
 * Original data fromat is `csv` 
-> medication_orders 
-> lab_result
-> encounter
-> encounter_dx
+> medication_orders </br>
+> lab_result</br>
+> encounter</br>
+> encounter_dx</br>
 
 
 
