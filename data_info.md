@@ -1,9 +1,9 @@
 ## Raw Data
 Original data fromat is `csv` 
-> medication_orders </br>
-> lab_result</br>
-> encounter</br>
-> encounter_dx</br>
+> medication_orders : this data is about order of medication per patient </br>
+> lab_result : this data is about lab result of the patients </br>
+> encounter : this data is about visit_details of the patients </br>
+> encounter_dx : this data is containing visit code of the patients </br>
 
 
 
@@ -80,7 +80,7 @@ Original data fromat is `csv`
  |-- consult_ordered: string (nullable = true)</br>
  |-- Disposition: string (nullable = true)</br>
 
-**encounter_dx**
+**encounter_dx**</br>
  |-- Provider_Org: string (nullable = true)</br>
  |-- code: string (nullable = true)</br>
  |-- vocab: string (nullable = true)</br>
