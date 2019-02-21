@@ -15,10 +15,10 @@ In order to provide a proper treatment to a patient we must understand a patient
 
 **medication_orders**
 root
- |-- Provider_Org: string (nullable = true)
- |-- Member_ID: string (nullable = true)
- |-- Last_Filled_Date: string (nullable = true)
- |-- Drug_Name: string (nullable = true)
+ |-- Provider_Org: string (nullable = true) </br>
+ |-- Member_ID: string (nullable = true) </br>
+ |-- Last_Filled_Date: string (nullable = true) </br>
+ |-- Drug_Name: string (nullable = true) </br>
  |-- Drug_NDC: string (nullable = true)
  |-- Status: string (nullable = true)
  |-- Sig: string (nullable = true)
