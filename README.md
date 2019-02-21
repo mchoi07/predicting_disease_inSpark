@@ -12,10 +12,27 @@ In order to provide a proper treatment to a patient we must understand a patient
 </ul>
 
 ## Raw Data 
-scala> encounter.show()
-+--------------------+--------------------+------------+-----------+------------+--------------------+--------------------+---------------------+--------------------+--------------------+-----------+--------------+-------------+--------------------+--------------------+--------------------+----------------+-----------------+-----------------------+----------------------------+----------------+--------------------+---------------------+------------------+--------+--------------------+---------------+--------------------+
-|        Provider_Org|        Encounter_ID|   Member_ID|Provider_ID|Provider_NPI|           Clinic_ID|  Encounter_DateTime|Encounter_Description|                  CC|          Episode_ID|Patient_DOB|Patient_Gender|Facility_Name|       Provider_Name|           Specialty|         Clinic_Type|lab_orders_count|lab_results_count|medication_orders_count|medication_fulfillment_count|vital_sign_count|therapy_orders_count|therapy_actions_count|immunization_count|Has_Appt|           SOAP_Note|consult_ordered|         Disposition|
-+--------------------+--------------------+------------+-----------+------------+--------------------+--------------------+---------------------+--------------------+--------------------+-----------+--------------+-------------+--------------------+--------------------+--------------------+----------------+-----------------+-----------------------+----------------------------+----------------+--------------------+---------------------+------------------+--------+--------------------+---------------+--------------------+
+
+**medication_orders**
+root
+ |-- Provider_Org: string (nullable = true)
+ |-- Member_ID: string (nullable = true)
+ |-- Last_Filled_Date: string (nullable = true)
+ |-- Drug_Name: string (nullable = true)
+ |-- Drug_NDC: string (nullable = true)
+ |-- Status: string (nullable = true)
+ |-- Sig: string (nullable = true)
+ |-- Route: string (nullable = true)
+ |-- Dose: string (nullable = true)
+ |-- Units: string (nullable = true)
+ |-- Order_ID: string (nullable = true)
+ |-- Order_Date: string (nullable = true)
+ |-- Qty_Ordered: string (nullable = true)
+ |-- Refills: string (nullable = true)
+ |-- Order_Provider_ID: string (nullable = true)
+ |-- Order_Provider_Name: string (nullable = true)
+ |-- Medication_Type: string (nullable = true)
+ |-- Encounter_ID: string (nullable = true)
 
 
 
