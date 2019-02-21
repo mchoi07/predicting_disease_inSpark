@@ -1,5 +1,5 @@
 ## Raw Data
-* Original data fromat is `csv` 
+Original data fromat is `csv` 
 > medication_orders </br>
 > lab_result</br>
 > encounter</br>
@@ -90,18 +90,18 @@
  
  ## Feature Selection
  
-**medical_dataframe**
+**medical_dataframe**</br>
  |-- patientID: string (nullable = true) </br>
  |-- date: string (nullable = true) </br>
  |-- medicine: string (nullable = true) </br>
  
-**lab_dataframe**
+**lab_dataframe**</br>
  |-- patientID: string (nullable = true) </br>
  |-- date: string (nullable = true) </br>
  |-- testName: string (nullable = true) </br>
  |-- value: double (nullable = true) </br>
  
-**diag_dataframe**
+**diag_dataframe**</br>
  |-- patientId: string (nullable = true) </br>
  |-- date: string (nullable = true) </br>
  |-- code: string (nullable = true) </br>
