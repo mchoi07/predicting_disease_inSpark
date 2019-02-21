@@ -8,6 +8,10 @@ In order to provide a proper treatment to a patient we must understand a patient
 
 Please read the data_info.md file
 
+## Feature Engineering 
+
+1. Selecting feature from Raw Data
+
 
 ## Prerequisites
 
