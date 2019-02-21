@@ -12,6 +12,35 @@ Please read the data_info.md file
 
 1. Selecting feature from Raw Data
 
+**medical_dataframe**</br>
+ |-- patientID: string (nullable = true) </br>
+ |-- date: string (nullable = true) </br>
+ |-- medicine: string (nullable = true) </br>
+ 
+**lab_dataframe**</br>
+ |-- patientID: string (nullable = true) </br>
+ |-- date: string (nullable = true) </br>
+ |-- testName: string (nullable = true) </br>
+ |-- value: double (nullable = true) </br>
+ 
+**diag_dataframe**</br>
+ |-- patientId: string (nullable = true) </br>
+ |-- date: string (nullable = true) </br>
+ |-- code: string (nullable = true) </br>
+ 
+ 2. Convert RDD to RDD </br>
+ ```{scara}
+case class Diagnostic(patientID: String, date: Date, code: String)
+case class LabResult(patientID: String, date: Date, testName: String, value: Double)
+case class Medication(patientID: String, date: Date, medicine: String)
+
+val medication: RDD[Medication] = sql_med.as[Medication].rdd
+val labResult: RDD[LabResult] = sql_lab_b.as[LabResult].rdd
+val diagnostic: RDD[Diagnostic] = sql_diag.as[Diagnostic].rdd
+
+ ```
+ 
+
 
 ## Prerequisites
 
